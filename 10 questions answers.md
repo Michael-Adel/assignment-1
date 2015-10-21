@@ -7,16 +7,25 @@ encapsulation is acomplished by hiding data that arent supposed to be used by an
 
 4) Class data members are the data component of a class , while Class funcitions are the public interface 
 
-5) class account {
+5) 
+class account
+{ 
 private:
-   string depositor_name;
-   string account_number ;
+	string depositor_name;
+   string account_number;
    double balance;
-public :
-   void account_info ( char depositor_name[] , string account_number    ,double balance ) ;
-   void deposit ( double amount );
-   void withdraw ( double value );
-  }
+
+public:
+	
+	void display ();
+	account( string name , string number , double bal);
+    void deposit ( double amount);
+    void withdraw (double value );
+	account(void);
+    ~account(void);
+	  
+};
+
 
 6) constructors are called whenever an object is created , class destructors are called at the end of the use of class after the expiration of the called function.
 
