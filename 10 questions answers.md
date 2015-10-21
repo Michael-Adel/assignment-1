@@ -9,7 +9,7 @@ encapsulation is acomplished by hiding data that arent supposed to be used by an
 
 5) class account {
 private:
-   char depositor_name[20];
+   string depositor_name;
    string account_number ;
    double balance;
 public :
